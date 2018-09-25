@@ -1,7 +1,11 @@
 body {
-	background: rgb(255, 227, 220);
+	background: white;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
+}
+
+header {
+	text-align: center;
 }
 
 h1 {
@@ -13,8 +17,4 @@ h2 {
 	color: teal;
 	font-size: 14pt;
 	font-weight: 400;
-}
-
-a {
-	
 }
