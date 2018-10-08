@@ -1,0 +1,162 @@
+body{
+	margin: 0;
+	color: #444;
+    font-family: "Lato", Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.container {
+	margin: auto;
+	padding: 54px;
+	width: 1080px;
+}
+
+nav {
+	background: #000;
+	text-align: center;
+	color: #fff;
+	font-size: 24px;
+}
+
+.nav a {
+	color: white;
+	text-decoration: none;
+	padding: 20px;
+	display: inline-block;
+	margin-right:6;
+}
+
+.nav a:hover {
+	color: #DD2400;
+	background: #900;
+}
+
+
+header h1, header h2 {
+	margin: 0;
+	display: inline-block;
+	font-weight: 300;
+}
+
+h1, h2, h3, h4 {
+	margin: 0;
+	font-weight: 300;
+}
+
+
+h1 {
+	font-size: 54px;
+	color: #DD2400;
+	font-weight: 300;
+}
+
+h1:hover {
+	color: #a00;
+}
+
+
+h2 {
+	font-size: 36px;
+	color: #000;
+
+}
+
+h2 a {
+	color: #888;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+h2 a:hover {
+	color: #d00;
+}
+
+
+h3 {
+	font-size: 36px;
+	color: #cccccc;
+}
+
+
+h4 {
+	text-align: left;
+	color: #888;
+	font-weight: bold;
+	font-size: 14;
+}
+
+p{
+	font-size: 16px;
+}
+
+img {
+	margin: 0px;
+	width: 100%;
+}
+
+.ad {
+	width: 300px;
+	height: 300px;
+	background: gray;
+}
+
+.section {
+	float: left;
+	width: 700px;
+}
+
+
+.aside {
+	float: right;
+	width: 300px;
+}
+
+
+.clear {
+	clear: both
+}
+
+
+.article{
+	border-bottom: 1px solid #bbbbbb;
+	margin: 54px 0;
+	padding-bottom: 27px;
+}
+
+.continues {
+	text-align: right;
+}
+
+.continues a {
+	text-decoration: none;
+	font-weight: bold;
+		color:#DD2400;
+}
+
+.more {
+	text-align: right;
+}
+
+.more a {
+	color: #DD2400;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.popular_posts {
+	size: 10pt;
+}
+
+.popular_posts a {
+	font-size: 14pt;
+	color: #DD2400;
+	text-decoration: none;
+}
+
+.footer a {
+	color: #DD2400;
+	text-decoration: none;
+}
+
+

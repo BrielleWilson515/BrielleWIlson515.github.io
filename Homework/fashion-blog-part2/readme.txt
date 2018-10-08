@@ -6,16 +6,6 @@ If we were working with a real design document, you would be able to get the pre
 
 Some values you will also need:
 
-Content (conatiner class):
-    width: 1080px
-    padding: 54px
-
-High-level (body)text properties:
-    color: #444
-    font-family: "Lato" 
-    font-size: 18px
-    line-height: 1.5
-
 Anchors:
     color: #ddo
 
@@ -35,10 +25,6 @@ Anchors hover:
     font-size: 27px
     font-weight: 300
 
-Top-level Navigation Anchors
-    background: #000
-    color: #fff
-    font-size: 24px
 
 Top-level Navigation Anchors hover:
     background: #900
