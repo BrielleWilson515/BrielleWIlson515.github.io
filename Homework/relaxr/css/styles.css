@@ -69,16 +69,19 @@ img {
 	margin: 20px 0 20px 0;
 }
 
-.read-more a{
-  color: #043049;
+.read-more {
+  text-align: right;
+}
+
+.read-more > a{
   font-weight: 600;
-  justify-content: flex-end;
   text-decoration: none;
+    color: #043049;    
 }
 
 article {
   border-bottom: 1px solid #043049;
-  padding: 50px 0 40px 0;
+  padding: 50px 0 50px 0;
 }
 
 
@@ -153,11 +156,16 @@ footer {
 }
 
 .social-links{
-  width: 30px;
-  text-align: center;
+  width: 100px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
 }
 
-
+.social-links > img {
+  width: auto;
+  height: auto;
+}
 
 
 
