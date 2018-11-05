@@ -1,14 +1,4 @@
  /*
-	
-	Add .click() handlers for each of the boxes:
-
-	A) Boxes #a10, #a20, and #a30 should each add 10, 20, and 30, respectively, to the value in the center box, #out
-
-	B) Boxes #m10, #m20, and #m30 should each subtract 10, 20, and 30, respectively, from the value in the center box, #out
-
-	C) #red and #blue should change the background color of #out to red and blue, respectively
-	
-	D) #out should change the background of #out to white, and set the value back to zero
 
 	HINT: define a variable, var count = 0 outside of any functions. Use this variable to keep track of what to display inside of #out
 	Ex: when the user clicks #a10, add 10 to the "count" and then reflect this change in the HTML
@@ -24,65 +14,57 @@
 var total = 0 
 
 
-function addTen(){
+function addTen() {
 	//update the value of 'total'. This is called variable Re-assignment
 	total = total + 10
 	//update the DOM
 	$('#out').html(total)
-
-	$('#a10').click(addTen)
 }
 
-
-$('#a20').click(addTwenty)
-function addTwenty(){
+function addTwenty() {
 	total = total + 20
 	$('#out').html(total)
 }
 
-
-$('#a30').click(addThirty)
-function addThirty(){
-	total = total + 30;
-	$('#out').html(total);
+function addThirty() {
+	total = total + 30
+	$('#out').html(total)
 }
 
-$('#m10').click(minusTen)
-function minusTen(){
-	total = total - 10;
-	$('#out').html(total);
+function minusTen() {
+	total = total - 10
+	$('#out').html(total)
 }
 
-$('#m20').click(minusTwenty)
-function minusTwenty(){
-	total = total - 20;
-	$('#out').html(total);
+function minusTwenty() {
+	total = total - 20
+	$('#out').html(total)
 }
 
-$('#m30').click(minusThirty)
-function minusThirty(){
-	total = total - 30;
-	$('#out').html(total);
+function minusThirty() {
+	total = total - 30
+	$('#out').html(total)
 }
 
 
-$('#m20').click(changeRed)
-function changeRed(){
+
+//$('#m20').click(changeRed)
+
+function changeRed() {
 	$('#out').css('background','red')
 }
 
-
-
-//reassign total to 0
-
-$('#m20').click(changeWhite)
-function changeRed(){
-	$('#out').css('background','white')
+function changeBlue() {
+	$('#out').css('background','blue')
 }
 
-$('#out').click(refresh)
-function refresh(){
-	total = 0;
+
+
+//reassign total to 0 and colors to white
+
+function refresh() {
+	$('#out').css('background','white')
+	total = 0
 	$('#out').html(total)
 }
 
@@ -92,8 +74,15 @@ function refresh(){
 
 
 //output
-$('#out').html(addTen)
+$('#a10').click(addTen)
+$('#a30').click(addThirty)
+$('#a20').click(addTwenty)
+$('#m10').click(minusTen)
+$('#m20').click(minusTwenty)
+$('#m30').click(minusThirty)
 $('#red').click(changeRed)
+$('#blue').click(changeBlue)
+$('#out').click(refresh)
 
 
 
