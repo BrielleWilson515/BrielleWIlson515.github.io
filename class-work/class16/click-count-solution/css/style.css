@@ -13,7 +13,7 @@ body {
 }
 
 #click-me {
-	/*background-color: transparent;*/
+	background-color: transparent;
 	height: 100%;
 	margin: 0 auto;
 	padding: 50px;
@@ -21,18 +21,4 @@ body {
 	font-size: 80px;
 	font-family: "Short Stack", fantasy;
 	cursor: pointer;
-}
-
-
-body.rotate {
-    animation: rotation 2s infinite linear;
-}
-
-@keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(359deg);
-    }
 }

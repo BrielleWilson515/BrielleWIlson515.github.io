@@ -15,35 +15,23 @@
 
 var count = 0
 
-function clickCount() {
-	console.log('I am working')
-//1. increment the variable count by 1
-	count = count + 1
-//2. update the UI with the new count value
-	$('#click-num').html(count);
-
-
-//3. run conditional logic to change
-	if (count === 5) {
-		$("body").css('background-color', 'red');
-	} else if (count === 10) {
-		$("body").css('background-color', 'green');
-	} else if (count === 15) {
-		$("body").css('background-color', 'blue');
-	} else if (count === 20) {
-		//add the CSS class 'rotate' to the <body>
-		$("body").addClass('rotate');
-	} else {
-		$("body").css('background-color', 'black');
-	}
-
-}
-
-
-
 $('#click-me').click(clickCount)
 
+function clickCount() {
+  // Increment the variable count by 1
+  count = count + 1
 
+  // Output the newly updated count in the UI
+  $('#click-num').html(count)
 
-
-
+  // Conditionally change the background-color of <body> based on count's value
+  if (count === 5) {
+    $('body').css('background-color', 'red')
+  } else if (count === 10) {
+    $('body').css('background-color', 'green')
+  } else if (count === 15) {
+    $('body').css('background-color', 'blue')
+  } else {
+    $('body').css('background-color', 'black')
+  }
+}
