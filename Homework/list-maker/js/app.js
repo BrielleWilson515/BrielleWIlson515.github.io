@@ -21,24 +21,26 @@
   6. Finally, write the function, appendItem (see above)
 
 */
-console.log("test")
+$('#clickme').click(appendItem)
 
-$('#clickme').click(handleClick)
+function appendItem() {
+  // 1. Get user input
+  var newItem = $('#item').val()
+  var listItem = '<li>' + newItem + '</li>'
 
+  // 2. Output a new list item
+  $('#list').append(listItem)
 
-function handleClick (newItem){
-  var newItem = $("#item").val()
-  appendItem(newItem)
-  $("#item").val('')
+  // 3. Return focus to <input id="item" />
+  $('#item').focus()
+
+  // 4. Clear <input id="item" /> of any input
+  $('#item').val('')
 }
 
-function appendItem(item) {
-  $("#list").append('<li>' + item + '</li>')
+// Legendary Bonus: Remove dynamically created <li>'s
+$(document).on('click', 'li', handleRemove)
+
+function handleRemove() {
+  $(this).remove()
 }
-
-
-
-
-
-
-
