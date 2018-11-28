@@ -22,8 +22,8 @@
             height: 100%;
             display: grid;
             grid-gap: 3px;
-            grid-template-columns: repeat(12, 1fr);
-            grid-template-rows: 40px auto 40px;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-template-rows: repeat(5,  100px)
         }
 
         .header {
@@ -31,13 +31,18 @@
             grid-column-end: -1;
         }
 
-        .aside {
+        .headline{
             grid-column-start: 1;
-            grid-column-end: 4;
+            grid-column-end: -1;
         }
 
         .content {
-            grid-column-start: 4;
+            grid-column-start: 1;
+            grid-column-end: 6;
+        }
+
+        .aside {
+            grid-column-start: 6;
             grid-column-end: -1;
         }
 
@@ -52,8 +57,9 @@
 <body>
     <div class="container">
         <div class="header">HEADER</div>
-        <div class="aside">ASIDE</div>
+        <div class="headline">HEADLINE</div>
         <div class="content">CONTENT</div>
+        <div class="aside">ASIDE</div>
         <div class="footer">FOOTER</div>
     </div>
 </body>

@@ -23,13 +23,13 @@ $('#entry').submit(handleSubmit)
 
 // 2: Handle the submit event with the following function
 function handleSubmit(event) {
-	// 3: prevent submit's default behavior
+	// 3: prevent submit's default behavior (of refreshing the page on submit)
 	event.preventDefault()
 
 	// 4: create a variable, newEntry, to store user input from #newEntry
 	var newEntry = $('#newEntry').val()
 
-	// 5: call parseInt on newEntry to transform it from a string to a number
+	// 5: call parseInt on newEntry to transform it from a string to a number. "Reassigning a variable"
 	newEntry = parseInt(newEntry)
 
 	// 6: append a new <div> to #entries
@@ -38,8 +38,8 @@ function handleSubmit(event) {
 	// 7: update total variable
 	total = total + newEntry
 
-	// 8 (ctn): update #total element
-	$('#total').text('$' + total)
+	// 8 (ctn): update #total element. Output to HTML, including dollar sign
+	$('#total').html('$' + total)
 
 	// 9: clear #newEntry
 	$('#newEntry').val('')

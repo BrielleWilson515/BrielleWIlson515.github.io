@@ -1,18 +1,34 @@
-var modal = document.querySelector(".modal");
-var trigger = document.querySelector(".trigger");
-var closeButton = document.querySelector(".close-button");
 
-    function toggleModal() {
-        console.log("test")
-        modal.classList.toggle("show-modal");
-    }
+$(document).ready(function() {
 
-    function windowOnClick(event) {
-        if (event.target === modal) {
-            toggleModal();
-        }
-    }
+      // Initialize the plugin
+      $('#my_popup').popup({transition: 'all 0.3s'});
 
-    trigger.addEventListener("click", toggleModal);
-    closeButton.addEventListener("click", toggleModal);
-    window.addEventListener("click", windowOnClick);
+    });
+
+
+
+
+
+var bigImg = $('#bigimage')
+
+function swapFirstPic() {
+  bigImg.attr('src', 'img/restaurants/flatiron_district/abckitchen.jpg')
+}
+
+function swapSecondPic() {
+  bigImg.attr('src', 'img/restaurants/flatiron_district/dailyprovisions.jpg')
+}
+
+function swapThirdPic() {
+  bigImg.attr('src', 'img/restaurants/flatiron_district/gramercytavern.jpg')
+}
+
+function swapFourthPic() {
+  bigImg.attr('src', 'img/restaurants/flatiron_district/abckitchen.jpg')
+}
+
+$('#first').click(swapFirstPic)
+$('#second').click(swapSecondPic)
+$('#third').click(swapThirdPic)
+$('#fourth').click(swapFourthPic)

@@ -18,19 +18,23 @@
 
 var total = 0
 
-
 $("#entry").submit(handleSubmit)
 
 function handleSubmit(event){
+
   console.log("test")
+
   event.preventDefault()
+
   var newEntry = $("#newEntry").val()
+
   newEntry = parseInt(newEntry)
 
   $('#entries').append('<div>' + newEntry + '</div>')
 
   total = total + newEntry
-  $("#total").html(total)
+
+  $("#total").html('$' + total)
 
   $('#newEntry').val('')
 }

@@ -1,0 +1,131 @@
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+} 
+
+
+#my_popup{
+  background: white;
+  width: 70%;
+  min-width: 300px;
+  padding: 50px;
+}
+.modal-info{
+  margin: 10px 20px 10px 0;
+  width: 60%;
+}
+.restaurant-info{
+  display: flex;
+}
+.modal-contents{
+  display: flex;
+}
+.modal-header{
+  padding: 0;
+  margin: 0;
+  border-bottom: none;
+}
+.tags-modal{
+  margin: 20px 0 20px 0;
+  display: inline-block;
+}
+.modal-info-section{
+  margin: 0px 0px 30px 0;
+}
+.modal-image{
+  text-align: right;
+  width: 50%;
+}
+#bigimage{
+  max-width: 100%;
+  min-width: 200px;
+  height: auto;
+  justify-content: space-between;
+  margin: 0 0 15px 0;
+}
+.thumb {
+  position: relative;
+  width: 20%;
+  min-width: 100px
+  height: auto;
+  justify-content: space-between;
+}
+.my_popup_close{
+  color: gray;
+  background: none;
+  border: none;
+  float: right;
+  margin: -30px -30px 0 30px;
+}
+
+
+
+
+
+/* 
+everything OVER 1000px - background=pink
+everything OVER 992px and UNDER 1280 - background=yellow 
+everything OVER 768px and UNDER 992px - background=blue
+everything OVER 480px and UNDER 768px - background=green
+everything UNDER 480px - background=violet
+*/
+
+
+
+@media (min-width: 1280px) {
+  .restaurant-info{
+    display: block;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1280px) {
+  .restaurant-info{
+      display: block;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  #my_popup{
+     width: 100%;
+  }
+  .restaurant-info{
+    display: block;
+  }
+  .modal-contents{
+    display: block;
+  }
+  .modal-info{
+    margin: 10px 20px 10px 0;
+    width: 100%;
+  }
+  .modal-image{
+    text-align: center;
+    width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  #my_popup{
+    width: 100%;
+  }
+  .restaurant-info{
+    width: 100%;
+    display: block;
+  }
+  .modal-contents{
+    display: block;
+  }
+  .modal-info{
+    margin: 10px 20px 10px 0;
+    width: 100%;
+  }
+  .modal-image{
+    text-align: center;
+    width: 100%;
+  }
+
+}

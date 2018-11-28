@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="249px" height="119px" viewBox="0 0 249 119" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Restaurant-Guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Project-Gallery-Page" transform="translate(-120.000000, -60.000000)">
+            <g id="Group" transform="translate(120.000000, 60.000000)">
+                <text id="placeholder-logo" transform="translate(131.000000, 61.000000) rotate(-360.000000) translate(-131.000000, -61.000000) " font-family="FreightSansProBold-Regular, FreightSans Pro" font-size="40" font-weight="bold" line-spacing="45" fill="#000000">
+                    <tspan x="20" y="51">placeholder</tspan>
+                    <tspan x="20" y="96">logo</tspan>
+                </text>
+                <rect id="Rectangle" stroke="#000000" stroke-width="6" x="3" y="3" width="243" height="113"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
