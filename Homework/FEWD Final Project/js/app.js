@@ -5,7 +5,7 @@ $(document).ready(function() {
       $('#my_popup').popup({transition: 'all 0.3s'});
 
     });
-
+//test
 
 
 
